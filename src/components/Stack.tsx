@@ -72,13 +72,13 @@ const Stack = ({stack, removeStack , removeAll} : StackProps) => {
     
 )
 }
-
+{stack.length>0 &&(
 <button onClick={removeAll}
       className=" ml-auto text-red-500 font-bold border border-red-500 w-full rounded-2xl py-2"
     >
       Remove All
     </button>
-
+)}
 
 
 </div>

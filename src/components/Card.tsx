@@ -12,7 +12,7 @@ const TechnologyCard = ({ technology,addStack, stack }: TechnologyProps) => {
 
     return (
 
-    <div className="border rounded-xl p-5 shadow">
+    <div className={isAdded? "border-2 border-pink-600 rounded-xl p-5 ":"border-2 border-gray-300 rounded-xl p-5"}>
 
       <img
         src={technology.icon}
