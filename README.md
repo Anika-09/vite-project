@@ -16,7 +16,7 @@ Typescript
 3.prevents duplication
 4.has remove functionality
 5.can add card to the stack and can remove
-6.partially responsive
+6.partially responsive.
 7.Have gradient brand theme.
 
 
