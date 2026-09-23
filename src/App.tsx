@@ -28,7 +28,6 @@ function App() {
 const technologies = use(technologyPromise);
 
 
-
 const [stack,setStack]= useState<Technology[]>([]);
 
 const handleStack = (technology: Technology) => {
@@ -101,16 +100,14 @@ addStack={handleStack}
 stack={stack}
 />
   ))}
-
-
 </div>
 </div>
 
 <Footer></Footer>
 <ToastContainer/>
- 
     </>
   )
 }
+
 
 export default App
