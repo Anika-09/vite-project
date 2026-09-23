@@ -17,6 +17,7 @@ Typescript
 4.has remove functionality
 5.can add card to the stack and can remove
 6.partially responsive
+7.Have gradient brand theme.
 
 
 ####Also answer these React questions at the end of your Readme (write the answers in your own words, short and simple):
