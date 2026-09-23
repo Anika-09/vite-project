@@ -12,7 +12,7 @@ const TechnologyCard = ({ technology,addStack, stack }: TechnologyProps) => {
 
     return (
 
-    <div className={isAdded? "border-2 border-pink-600 rounded-xl p-5 ":"border-2 border-gray-300 rounded-xl p-5"}>
+    <div className={isAdded? "border-2 border-pink-600 rounded-xl p-5 ":"border-2 border-gray-300 rounded-xl p-5 shadow transition duration-300 hover:-translate-y-2 hover:shadow-lg"}>
 
       <img
         src={technology.icon}
@@ -36,13 +36,13 @@ const TechnologyCard = ({ technology,addStack, stack }: TechnologyProps) => {
 
 
 {isAdded ? (
-    <button className="bg-green-400 px-4 py-2 rounded mt-3">
+    <button className="bg-pink-500 w-full py-2 rounded mt-3">
         Added to Stack
     </button>
 ):(
 
 
-      <button  onClick={() => addStack(technology)}  className="bg-black text-white px-4 py-2 rounded mt-3">
+      <button  onClick={() => addStack(technology)}  className="bg-black text-white w-full py-2 rounded mt-3">
         Add to Stack
       </button>
 
