@@ -1,4 +1,5 @@
 import { use, useState } from 'react';
+// import { Suspense } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import Nav from "./components/Nav";
@@ -8,6 +9,7 @@ import Stack from "./components/Stack";
 import type {Technology} from "./types/Tech";
 import TechnologyCard from './components/Card';
 import Footer from './components/Footer';
+
 
 
 const technologyFetch = async (): Promise<Technology[]> => {
@@ -24,6 +26,7 @@ const technologyPromise = technologyFetch();
 function App() {
 
 const technologies = use(technologyPromise);
+
 
 
 const [stack,setStack]= useState<Technology[]>([]);
@@ -70,6 +73,7 @@ const handleRemoveAll =() =>{
 
  <Hero />
  
+
 
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6" >
   {technologies.slice(0,3).map((technology) => (
