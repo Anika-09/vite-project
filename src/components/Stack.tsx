@@ -9,7 +9,7 @@ interface StackProps{
 
 const Stack = ({stack, removeStack , removeAll} : StackProps) => {
   return (
-    <aside className="border rounded-xl p-5 shadow-sm lg:col-start-4 lg:row-start-1">
+    <div className="border rounded-xl p-5 shadow-sm lg:col-start-4 lg:row-start-1">
       
       {stack.length >0 &&( 
       
@@ -87,7 +87,7 @@ const Stack = ({stack, removeStack , removeAll} : StackProps) => {
 
 
       
-    </aside>
+    </div>
   );
 };
 
